@@ -1,0 +1,9 @@
+<div class="backdrop"></div>
+<div class="modal">
+  <nav>
+    <p>Add new product</p>
+    <input type="text" [(ngModel)]="nameOfProduct" placeholder="enter new product for add...">
+  </nav>
+<button (click)="addProduct()">add</button>
+<button class="close-button" (click)="closeModal()">x</button>
+</div>

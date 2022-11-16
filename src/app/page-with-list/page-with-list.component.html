@@ -1,0 +1,15 @@
+<div>
+  <button [disabled]="!buttonActive" (click)="removeProducts()">
+    Remove all selected products
+  </button>
+
+  <app-list-shopping (outProducts)="addConditionButton($event)"></app-list-shopping>
+
+  <button class="add-button" (click)="showModal()">
+    +
+  </button>
+
+  <app-modal-window *ngIf="modal"
+  (product)="addProduct($event)"
+  (close)="closeModal()"></app-modal-window>
+

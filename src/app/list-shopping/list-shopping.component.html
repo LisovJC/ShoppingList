@@ -1,0 +1,8 @@
+<ul class="list">
+  <li *ngFor="let prod of products; let i = index">
+    <div class="container">
+      <input type="checkbox" #select (click)="selectProduct(select, i)">
+      <p [class.checkbox] = "prod.checked">{{prod.name}}</p>
+    </div>
+  </li>
+</ul>

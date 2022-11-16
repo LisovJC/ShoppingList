@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+html{
+    font-family: 'PT Sans', sans-serif;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px 2px #ccc;
+}
+
+button:hover {
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+  }
+
+button:disabled{
+    background: rgb(224, 213, 213);
+}
+
+
+h1{
+    font-size: 3rem;
+}
+
+input{
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    margin-right: 20px;
+}
